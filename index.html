@@ -271,18 +271,19 @@
       width: 100%;
       max-width: 380px;
       margin: 30px auto 0;
+      padding: 0;
     }
   }
 
   @media (max-width: 600px) {
     .hero-form-section {
-      position: relative;
+      position: static;
       right: auto;
       top: auto;
       width: 100%;
       max-width: 100%;
-      margin: 30px auto 0;
-      padding: 0 3%;
+      margin: 25px 0 0 0;
+      padding: 0;
     }
   }
 
@@ -353,8 +354,9 @@
 
   @media (max-width: 600px) {
     .hero h1 {
-      font-size: clamp(28px, 5vw, 40px);
-      margin-bottom: 8px;
+      font-size: 32px;
+      margin-bottom: 6px;
+      line-height: 1.1;
     }
   }
 
@@ -459,6 +461,12 @@
     opacity: 0;
   }
 
+  @media (max-width: 600px) {
+    .stat-item {
+      text-align: left;
+    }
+  }
+
   .hero-stats .stat-item:nth-child(1) { animation-delay: 0.5s; }
   .hero-stats .stat-item:nth-child(2) { animation-delay: 0.6s; }
   .hero-stats .stat-item:nth-child(3) { animation-delay: 0.7s; }
@@ -482,6 +490,16 @@
     opacity: 0;
     width: 100%;
     transition: all 0.3s ease;
+    margin: 0 auto;
+  }
+
+  @media (max-width: 600px) {
+    .enquiry-card {
+      padding: 20px 16px;
+      border-radius: 16px;
+      margin: 0 3%;
+      width: calc(100% - 6%);
+    }
   }
 
   .enquiry-card:hover {
@@ -503,10 +521,33 @@
   }
   .form-header p { font-size: 12px; color: var(--text-soft); }
 
+  @media (max-width: 600px) {
+    .form-header {
+      margin-bottom: 12px;
+    }
+    .form-header h3 {
+      font-size: 16px;
+      margin-bottom: 1px;
+    }
+    .form-header p {
+      font-size: 11px;
+    }
+  }
+
   .form-group { margin-bottom: 12px; }
   .form-group label {
     display: block; font-size: 11px; font-weight: 600;
     color: var(--text-mid); margin-bottom: 4px; letter-spacing: 0.04em; text-transform: uppercase;
+  }
+
+  @media (max-width: 600px) {
+    .form-group {
+      margin-bottom: 10px;
+    }
+    .form-group label {
+      font-size: 10px;
+      margin-bottom: 3px;
+    }
   }
 
   .form-group input,
@@ -519,6 +560,16 @@
     transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
   }
 
+  @media (max-width: 600px) {
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      padding: 7px 9px;
+      font-size: 12px;
+      border-radius: 5px;
+    }
+  }
+
   .form-group input:focus,
   .form-group select:focus,
   .form-group textarea:focus {
@@ -529,6 +580,13 @@
   }
 
   .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+
+  @media (max-width: 600px) {
+    .form-row {
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+    }
+  }
 
   .btn-submit {
     width: 100%; padding: 10px;
@@ -569,6 +627,14 @@
     display: flex; align-items: center; justify-content: center; gap: 4px;
     animation: fadeInScale 0.6s ease 0.6s forwards;
     opacity: 0;
+  }
+
+  @media (max-width: 600px) {
+    .form-footer {
+      font-size: 10px;
+      margin-top: 8px;
+      gap: 3px;
+    }
   }
 
   /* ── HERO SCROLL INDICATORS ── */
