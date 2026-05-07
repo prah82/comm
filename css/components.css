@@ -666,7 +666,7 @@ h2.section-title em::after {
 }
 .section-desc {
   font-size: 16px; color: var(--text-soft); line-height: 1.7;
-  max-width: 560px;
+  max-width: 90rem;
   animation: slideInUp 0.6s ease 0.2s forwards;
   opacity: 0;
 }
