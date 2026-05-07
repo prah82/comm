@@ -1,0 +1,215 @@
+@media (max-width: 900px) {
+  nav {
+    height: 68px;
+    padding: 0 4%;
+  }
+
+  .nav-logo-container {
+    width: 52px; height: 52px;
+  }
+
+  .nav-logo {
+    height: 36px;
+  }
+
+  .nav-brand-text .t1 {
+    font-size: 13px;
+  }
+
+  .nav-brand-text .t2 {
+    font-size: 9px;
+  }
+
+  .nav-links {
+    position: absolute; top: 68px; left: 0; right: 0;
+    background: linear-gradient(135deg, #0B1D3A 0%, #1a3560 100%);
+    border-bottom: 1px solid rgba(232,100,12,0.15);
+    flex-direction: column; gap: 0;
+    padding: 16px 0;
+    max-height: 0; overflow: hidden;
+    transition: max-height 0.3s ease;
+  }
+
+  .nav-links.active {
+    max-height: 300px;
+  }
+
+  .nav-links a {
+    padding: 14px 5%; font-size: 14px; border-bottom: 1px solid rgba(255,255,255,0.08);
+  }
+
+  .nav-links a::after {
+    display: none;
+  }
+
+  .nav-links a:hover {
+    background: rgba(232,100,12,0.1);
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .hero-grid { grid-template-columns: 1fr; gap: 40px; padding-right: 0; }
+  .hero-form-section { position: relative; right: auto; top: auto; transform: none; width: 100%; max-width: 340px; margin: 40px auto 0; z-index: 10; }
+  .enquiry-card { padding: 20px 16px; width: 100%; }
+  .why-grid { grid-template-columns: 1fr; }
+  .info-grid { grid-template-columns: 1fr; }
+  .jobs-grid { grid-template-columns: repeat(2, 1fr); }
+  .placement-stats { grid-template-columns: repeat(3, 1fr); }
+  .footer-grid { grid-template-columns: 2fr 1fr 1fr 1fr; }
+  .campus-mosaic { grid-template-rows: auto; }
+}
+
+@media (max-width: 600px) {
+  nav {
+    padding: 0 3%;
+  }
+
+  .nav-logo-container {
+    width: 48px; height: 48px;
+  }
+
+  .nav-logo {
+    height: 32px;
+  }
+
+  .nav-brand-text {
+    gap: 1px;
+  }
+
+  .nav-brand-text .t1 {
+    font-size: 12px;
+  }
+
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: 0;
+    padding-top: 0;
+    padding-right: 0;
+    padding: 0;
+    margin: 0;
+  }
+
+  .hero-grid > div:first-child {
+    display: block !important;
+    order: 1;
+  }
+
+  .hero-grid > div:nth-child(2),
+  .hero-image-wrap {
+    display: block !important;
+    order: 2;
+  }
+
+  .hero-image-wrap {
+    display: block !important;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    margin: 80px 0 0 0 !important;
+    padding: 0 !important;
+    border-radius: 0 !important;
+  }
+
+  .hero-image {
+    width: 100% !important;
+    height: 100% !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    object-fit: cover !important;
+    object-position: center center !important;
+  }
+
+  .hero h1 { font-size: 32px; margin-bottom: 6px; }
+  .hero-stats { flex-direction: column; gap: 20px; display: none; }
+  .hero-form-section {
+    position: static !important;
+    right: auto;
+    top: auto;
+    transform: none;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    z-index: 10;
+  }
+  .enquiry-card {
+    padding: 18px 14px;
+    width: 100% !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    margin: 0 !important;
+  }
+  .form-group input,
+  .form-group select,
+  .form-group textarea { padding: 6px 8px; font-size: 12px; }
+  .why-grid { gap: 40px; }
+  .jobs-grid { grid-template-columns: 1fr; }
+  .job-card { min-height: auto; }
+  .placement-stats { grid-template-columns: 1fr; }
+  .footer-grid { grid-template-columns: 1fr; gap: 32px; }
+  .campus-mosaic { grid-template-columns: repeat(2, 1fr); gap: 8px; grid-template-rows: auto; }
+  .cam-img:nth-child(1) { grid-column: span 1; grid-row: span 1; aspect-ratio: 1; }
+  .cam-img:nth-child(5) { grid-column: span 1; aspect-ratio: 2; }
+}
+
+@media (max-width: 900px) {
+  .testimonial-slide {
+    gap: 30px;
+    padding: 30px 40px;
+  }
+
+  .testimonial-image {
+    width: 150px;
+    height: 220px;
+  }
+
+  .testimonial-content h4 {
+    font-size: 20px;
+  }
+
+  .testimonial-content .quote {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 600px) {
+  .testimonials-carousel {
+    height: 500px;
+  }
+
+  .testimonial-slide {
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px 20px;
+  }
+
+  .testimonial-image {
+    width: 120px;
+    height: 180px;
+  }
+
+  .carousel-nav {
+    width: 40px;
+    height: 40px;
+  }
+
+  .carousel-nav.prev {
+    left: 10px;
+  }
+
+  .carousel-nav.next {
+    right: 10px;
+  }
+
+  .testimonial-content h4 {
+    font-size: 18px;
+  }
+
+  .testimonial-content .quote {
+    font-size: 13px;
+    padding: 16px;
+    margin-bottom: 16px;
+  }
+}

@@ -1,0 +1,40 @@
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --saffron: #E8640C;
+  --saffron-light: #FFF0E5;
+  --saffron-dark: #B84C05;
+  --navy: #0B1D3A;
+  --navy-mid: #1A3560;
+  --navy-light: #EFF3FA;
+  --gold: #D4A017;
+  --gold-light: #FFF9E6;
+  --cream: #FDFAF5;
+  --white: #FFFFFF;
+  --text-dark: #0D1B2A;
+  --text-mid: #4A5568;
+  --text-soft: #718096;
+  --border: rgba(11,29,58,0.10);
+  --shadow-sm: 0 2px 12px rgba(11,29,58,0.08);
+  --shadow-md: 0 8px 40px rgba(11,29,58,0.14);
+  --shadow-lg: 0 20px 60px rgba(11,29,58,0.18);
+  --radius: 12px;
+  --radius-lg: 20px;
+  --primary: var(--saffron);
+  --primary-dark: var(--saffron-dark);
+  --ink: var(--text-dark);
+  --muted: var(--text-soft);
+  --font-display: 'Playfair Display', serif;
+  --font-body: 'DM Sans', sans-serif;
+  --cream-dark: #F3E8DA;
+  --header-h: 84px;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background: var(--cream);
+  color: var(--text-dark);
+  overflow-x: hidden;
+}
